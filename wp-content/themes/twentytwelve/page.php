@@ -13,6 +13,7 @@
  */
 
 get_header(); ?>
+
 <div class="row-fluid">
     
     <div class="span9">
@@ -32,5 +33,6 @@ get_header(); ?>
     </div>
     
 </div>
+
 
 <?php get_footer(); ?>

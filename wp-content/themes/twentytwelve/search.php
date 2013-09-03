@@ -8,6 +8,7 @@
  */
 
 get_header(); ?>
+
 <div class="row-fluid">
     
     <div class="span9">

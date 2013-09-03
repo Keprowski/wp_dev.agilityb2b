@@ -25,13 +25,19 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Asap" media="screen">
-<script src="jquery-1.6.1.min.js"></script>
-<script src="jquery.sticky.js"></script>
-<script>
+<script src="../js/jquery-1.6.1.min.js"></script>
+<!--<script src="jquery.sticky.js"></script>-->
+<!--<script>
   $(document).ready(function(){
     $(".sidebar-prawy").sticky({topSpacing:0});
   });
-</script> 
+</script> -->
+<script>
+    $(window).scroll(function(){
+    $(".sidebar-prawy").css("top",Math.max(0,350-$(this).scrollTop()));
+});
+    
+</script>
 
 
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
@@ -82,8 +88,10 @@
 	</header><!-- #masthead -->
     </div>
         <div class="span3">
+        
             <?php get_sidebar('right'); ?>
-        </div>
+        
+         </div>
             
     </div>               
         

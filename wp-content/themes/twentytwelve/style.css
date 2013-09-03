@@ -431,34 +431,22 @@ img.wp-smiley,
 }
 .nav-previous,
 .previous-image a{
-    float: left;
-    text-align: center;
-    width: 35%;
-    background-color: #1BA1E2;
-
-    background-repeat: repeat-x;
-    border: medium none;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1.42857;
-    padding: 13px 19px;
-    margin-bottom: 20px;
+    
 }
 
 .nav-previous,
 .previous-image{color:white;}
 
 .nav-next,
-.next-image {coor: white;
+.next-image {color: white;
     
     
 }
 
 .nav-next,
-.next-image a{color:white;
+.next-image a{}
+
+a[rel="next"]{color:white;
             float: right;
     text-align: center;
     width: 35%;
@@ -475,10 +463,23 @@ img.wp-smiley,
     padding: 13px 19px;
     margin-bottom: 20px;}
 
-.nav-next,
-.next-image a:hover{color:white;
-                     
-                    }
+
+a[rel="prev"]{color:white;
+            float: right;
+    text-align: center;
+    width: 35%;
+    background-color: #1BA1E2;
+
+    background-repeat: repeat-x;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.42857;
+    padding: 13px 19px;
+    margin-bottom: 20px;}
 
 .nav-single + .comments-area,
 #comment-nav-above {
@@ -1871,6 +1872,9 @@ img#wpstats {
                height:100%;
                padding: 20px;
                color:white;
+               position: fixed;
+               top:0px;
+               
                
 }
 
@@ -2081,3 +2085,10 @@ ul.page-numbers .current {
 
 #footer img{text-align: center;
             padding-top: 15px;}
+
+hr.vertical
+{
+   width: 20px;
+   height: 100%; 
+   background-color: #1BA1E2;
+} 

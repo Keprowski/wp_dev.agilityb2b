@@ -6,8 +6,8 @@ get_header();
 ?>
 
 <div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span5">
+    
+    <div class="span9">
         $myposts = get_posts('');
         foreach($myposts as $post) :
         setup_postdata($post);
@@ -26,12 +26,12 @@ get_header();
             </div>
         </div>
         <?php comments_template(); ?>
-        <?php endforeach;
+       
         wp_reset_postdata(); ?>
     </div>
     <div class="span3">
 <?php get_sidebar('right'); ?>
     </div>
-    <div class="span2"></div>
+    
 </div>
 <?php get_footer(); ?>

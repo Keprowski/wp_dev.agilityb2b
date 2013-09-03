@@ -8,6 +8,7 @@
  */
 
 get_header(); ?>
+
 <div class="row-fluid">
     
     <div class="span9">
@@ -32,7 +33,7 @@ get_header(); ?>
 	</div><!-- #primary -->
     </div>
     <div class="span3">
-       <?php get_sidebar('right'); ?> 
+        <?php get_sidebar('right'); ?>
     </div>
     
 </div>

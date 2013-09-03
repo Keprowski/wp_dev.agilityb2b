@@ -29,15 +29,15 @@
         <div class="span3"></div>
         <div class="span6">
             <br />
-            <img src="img/computer.png">
-            <img src="img/plus.png">
-            <img src="img/beer.png">
-            <img src="img/plus.png">
-            <img src="img/pizza.png">
-            <img src="img/plus.png">
-            <img src="img/cycki.png">
-            <img src="img/equal.png">
-            <img src="img/happy.png">
+            <img src="../img/computer.png">
+            <img src="../img/plus.png">
+            <img src="../img/beer.png">
+            <img src="../img/plus.png">
+            <img src="../img/pizza.png">
+            <img src="../img/plus.png">
+            <img src="../img/cycki.png">
+            <img src="../img/equal.png">
+            <img src="../img/happy.png">
             
         </div>
         <div class="span3"></div>

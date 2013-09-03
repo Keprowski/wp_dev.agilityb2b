@@ -4,6 +4,7 @@
  */
 get_header();
 ?>
+
 <div class="row-fluid">
 
     <div class="span2"></div>

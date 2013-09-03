@@ -1,4 +1,4 @@
-<div class="sidebar-prawy sticky-wrapper is-sticky">
+<div class="sidebar-prawy">
    <ul>
       <?php
       if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('right-sidebar') ) :

@@ -7,8 +7,8 @@ get_header();
 
 <div class="row-fluid">
 
-    <div class="span2"></div>
-    <div class="span6">
+    
+    <div class="span9">
         
         <?php /* The loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
@@ -39,11 +39,13 @@ get_header();
         <?php endwhile; ?> 
        
     </div>
-    <div class="span2">
+    <div class="span3">
         <?php get_sidebar('right'); ?>
     </div>
-    <div class="span2"></div>
+    
 </div>
 
 <?php wpbeginner_numeric_posts_nav(); ?>
 <?php get_footer(); ?>
+
+

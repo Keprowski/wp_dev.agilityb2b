@@ -12,7 +12,9 @@
  */
 
 get_header(); ?>
-
+<div class="row-fluid">
+    
+    <div class="span9">
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
@@ -69,6 +71,28 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</section><!-- #primary -->
+<?php
+    global $wp_query;
+    $big = 99999999;
+    echo paginate_links(array(
+    'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+    'format' => '?paged=%#%',
+    'total' => $wp_query->max_num_pages,
+    'current' => max(1, get_query_var('paged')),
+    'show_all' => false,
+    'end_size' => 2,
+    'mid_size' => 3,
+    'prev_next' => true,
+    'prev_text' => 'Wstecz',
+    'next_text' => 'Dalej',
+    'type' => 'list'
+    ));
+    ?>
+    </div>
+    <div class="span3">
+        <?php get_sidebar('right'); ?>
+    </div>
+    
+</div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
